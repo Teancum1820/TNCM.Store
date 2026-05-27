@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">TNCM icon</title>
+  <rect width="512" height="512" rx="96" fill="#ffffff"/>
+  <rect x="48" y="48" width="416" height="416" rx="72" fill="none" stroke="#d9c28f" stroke-width="18"/>
+  <path d="M137 181h238v42h-94v143h-50V223h-94z" fill="#202020"/>
+  <path d="M156 392h200" stroke="#7f9183" stroke-width="18" stroke-linecap="round"/>
+</svg>
