@@ -1,4 +1,4 @@
-const CACHE_NAME = "tncm-store-v3";
+const CACHE_NAME = "tncm-store-v4";
 
 const CORE_ASSETS = [
   "./",
