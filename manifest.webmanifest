@@ -1,7 +1,7 @@
 {
   "name": "TNCM.store",
   "short_name": "TNCM",
-  "description": "Elegant LDS 3D printable art by Caleb Day.",
+  "description": "Christian-themed apparel, custom business merchandise, custom scripture designs, and LDS 3D printable art by Caleb Day.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
