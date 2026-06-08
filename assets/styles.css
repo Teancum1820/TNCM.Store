@@ -662,7 +662,7 @@ button.button {
 .fsc-layout {
   width: calc(100% - 32px);
   max-width: var(--max);
-  min-height: calc(100svh - var(--header));
+  min-height: 100svh;
   margin: 0 auto;
   padding: 72px 0 88px;
   display: grid;

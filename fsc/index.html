@@ -17,22 +17,6 @@
     <link rel="stylesheet" href="../assets/styles.css">
   </head>
   <body class="fsc-page">
-    <header class="site-header">
-      <div class="nav-wrap">
-        <a class="brand" href="../" aria-label="TNCM.store home">
-          <span class="brand-mark" aria-hidden="true">TNCM</span>
-          <span>TNCM.store</span>
-        </a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="../">Home</a>
-          <a href="../statues/">Statues</a>
-          <a href="../busts/">Busts</a>
-          <a href="../3d-paintings/">3D Paintings</a>
-          <a href="../fsc/">FSC</a>
-        </nav>
-      </div>
-    </header>
-
     <main class="fsc-main">
       <section class="fsc-layout">
         <div class="fsc-intro">
@@ -64,7 +48,7 @@
               <h2>June FSC Giveaway</h2>
             </div>
           </div>
-          <p class="fsc-form-copy">Two quick answers are all it takes. Required fields are marked with an asterisk.</p>
+          <p class="fsc-form-copy">Complete all three fields to enter. Required fields are marked with an asterisk.</p>
 
           <form
             class="fsc-form"
@@ -77,7 +61,7 @@
             <input type="hidden" name="pageHistory" value="0">
 
             <div class="form-field">
-              <label for="fsc-name">Full name <span class="optional">(optional)</span></label>
+              <label for="fsc-name">Full name <span aria-hidden="true">*</span></label>
               <input
                 id="fsc-name"
                 name="entry.1661641481"
@@ -85,6 +69,7 @@
                 autocomplete="name"
                 maxlength="120"
                 placeholder="Your name"
+                required
               >
             </div>
 
