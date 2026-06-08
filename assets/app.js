@@ -120,6 +120,43 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+document.querySelectorAll("[data-google-form]").forEach((form) => {
+  const responseFrame = document.querySelector("[data-response-frame]");
+  const status = form.querySelector("[data-form-status]");
+  const submitButton = form.querySelector('button[type="submit"]');
+  const submitLabel = submitButton?.querySelector("span");
+  let submitted = false;
+
+  form.addEventListener("submit", () => {
+    submitted = true;
+    submitButton?.setAttribute("disabled", "");
+    if (submitLabel) {
+      submitLabel.textContent = "Sending...";
+    }
+    if (status) {
+      status.textContent = "Sending your entry...";
+      status.classList.remove("success");
+    }
+  });
+
+  responseFrame?.addEventListener("load", () => {
+    if (!submitted) {
+      return;
+    }
+
+    submitted = false;
+    form.reset();
+    submitButton?.removeAttribute("disabled");
+    if (submitLabel) {
+      submitLabel.textContent = "Submit another entry";
+    }
+    if (status) {
+      status.textContent = "Your FSC entry was submitted. Thank you!";
+      status.classList.add("success");
+    }
+  });
+});
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register(new URL("service-worker.js", rootUrl));
