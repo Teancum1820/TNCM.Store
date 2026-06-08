@@ -128,6 +128,12 @@ document.querySelectorAll("[data-google-form]").forEach((form) => {
   let submitted = false;
 
   form.addEventListener("submit", () => {
+    form.querySelectorAll("[data-submit-default]").forEach((field) => {
+      if (!field.value.trim()) {
+        field.value = field.dataset.submitDefault;
+      }
+    });
+
     submitted = true;
     submitButton?.setAttribute("disabled", "");
     if (submitLabel) {

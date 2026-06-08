@@ -899,27 +899,6 @@ button.button {
   color: #395844;
 }
 
-.form-privacy,
-.google-form-link {
-  margin: -9px 0 0;
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.5;
-}
-
-.google-form-link {
-  margin: 24px 0 0;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-  text-align: center;
-}
-
-.google-form-link a {
-  color: var(--ink);
-  font-weight: 700;
-  text-underline-offset: 3px;
-}
-
 .response-frame {
   position: absolute;
   width: 1px;
